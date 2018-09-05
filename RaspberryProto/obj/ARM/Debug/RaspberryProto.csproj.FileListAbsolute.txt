@@ -210,3 +210,4 @@ C:\Users\rsumalde\Documents\Visual Studio 2017\Projects\RaspberryProto\Raspberry
 C:\Users\rsumalde\Documents\Visual Studio 2017\Projects\RaspberryProto\RaspberryProto\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\rsumalde\Documents\Visual Studio 2017\Projects\RaspberryProto\RaspberryProto\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\rsumalde\Documents\Visual Studio 2017\Projects\RaspberryProto\RaspberryProto\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\rsumalde\Documents\Visual Studio 2017\Projects\RaspberryProto\RaspberryProto\obj\ARM\Debug\RaspberryProto.csprojAssemblyReference.cache

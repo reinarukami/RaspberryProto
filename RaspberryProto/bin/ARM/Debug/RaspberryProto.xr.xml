@@ -5,6 +5,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Content" />
       <RootEvent Name="Unloaded" />
     </RootType>
