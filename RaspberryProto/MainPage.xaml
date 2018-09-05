@@ -37,19 +37,19 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Row="1" Grid.Column="0">
-                    <TextBlock Text="Green" HorizontalAlignment="Center" FontSize="50"></TextBlock>
+                    <TextBlock Text="Device 1" HorizontalAlignment="Center" FontSize="50"></TextBlock>
                     <Button Content="Switch" x:Name="Green" HorizontalAlignment="Center" Height="69" Width="130" Click="Green_Click"/>
                     <TextBlock x:Name="GreenStatusLabel" Text="Status: Off" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25"></TextBlock>
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="1">
-                    <TextBlock Text="Red" HorizontalAlignment="Center" FontSize="50"></TextBlock>
+                    <TextBlock Text="Device 2" HorizontalAlignment="Center" FontSize="50"></TextBlock>
                     <Button Content="Switch" x:Name="Red" HorizontalAlignment="Center" Height="69" Width="130" Click="Red_Click"/>
                     <TextBlock x:Name="RedStatusLabel" Text="Status: Off" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25"></TextBlock>
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="2">
-                    <TextBlock Text="Yellow" HorizontalAlignment="Center" FontSize="50"></TextBlock>
+                    <TextBlock Text="Device 3" HorizontalAlignment="Center" FontSize="50"></TextBlock>
                     <Button Content="Switch" x:Name="Yellow" HorizontalAlignment="Center" Height="69" Width="130" Click="Yellow_Click"/>
                     <TextBlock x:Name="YellowStatusLabel" Text="Status: Off" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25"></TextBlock>
                 </Grid>

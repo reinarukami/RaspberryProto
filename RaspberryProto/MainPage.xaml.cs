@@ -33,7 +33,7 @@ namespace RaspberryProto
         {
             this.InitializeComponent();
 			InitializeTimer();
-			//InitGpio();
+			InitGpio();
 		}
 
 		private void InitializeTimer()
@@ -57,7 +57,59 @@ namespace RaspberryProto
 				if (response.IsSuccessStatusCode)
 				{
 					string stringstatus = await response.Content.ReadAsStringAsync();
-					var test = JsonConvert.DeserializeObject<List<Devices>>(stringstatus);
+					var devices = JsonConvert.DeserializeObject<List<Devices>>(stringstatus);
+
+					foreach(var device in devices)
+					{
+						switch (device.name)
+						{
+							case "Device1":
+
+								if(device.status == "true")
+								{
+									greenPin.Write(GpioPinValue.High);
+									GreenStatusLabel.Text = "Status:ON";
+								}
+								else
+								{
+									greenPin.Write(GpioPinValue.Low);
+									GreenStatusLabel.Text = "Status:OFF";
+								}
+								break;
+
+							case "Device2":
+
+								if (device.status == "true")
+								{
+									redPin.Write(GpioPinValue.High);
+									RedStatusLabel.Text = "Status:ON";
+								}
+								else
+								{
+									redPin.Write(GpioPinValue.Low);
+									RedStatusLabel.Text = "Status:OFF";
+								}
+								break;
+
+							case "Device3":
+
+								if (device.status == "true")
+								{
+									yellowPin.Write(GpioPinValue.High);
+									YellowStatusLabel.Text = "Status:ON";
+								}
+								else
+								{
+									yellowPin.Write(GpioPinValue.Low);
+									YellowStatusLabel.Text = "Status:OFF";
+								}
+
+								break;
+
+							default:
+								break;
+						}
+					}
 
 					if (stringstatus == "true")
 					{
@@ -147,6 +199,7 @@ namespace RaspberryProto
 		{
 			redPin.Dispose();
 			greenPin.Dispose();
+			yellowPin.Dispose();
 		}
 
 
